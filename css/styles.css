@@ -16,7 +16,6 @@
 }
 
 /* Typography */
-
 html {
   font-size: 62.5%;
 }
@@ -70,7 +69,6 @@ p {
 }
 
 /* Links */
-
 a {
   text-decoration: none;
 }
@@ -99,7 +97,6 @@ a {
 }
 
 /* Badges */
-
 .badge {
   border-radius: 20px;
   font-size: 2rem;
@@ -134,7 +131,6 @@ a {
 }
 
 /* Lists */
-
 .list {
   list-style: none;
   padding-left: 0;
@@ -163,14 +159,22 @@ a {
 }
 
 /* Icons */
-
 .icon {
   width: 40px;
   height: 40px;
 }
 
+.icon--small {
+  width: 30px;
+  height: 30px;
+}
+
 .icon--primary {
   fill: var(--color-primary);
+}
+
+.icon--white {
+  fill: #fff;
 }
 
 .icon-container {
@@ -183,8 +187,11 @@ a {
   align-items: center;
 }
 
-/* Buttons */
+.icon-container--accent {
+  background: var(--color-accent);
+}
 
+/* Buttons */
 .btn {
   border-radius: 40px;
   border: 0;
@@ -248,7 +255,6 @@ a {
 }
 
 /* Inputs */
-
 .input {
   border-radius: var(--border-radius);
   border: 1px solid var(--color-border);
@@ -285,7 +291,6 @@ a {
 }
 
 /* Cards */
-
 .card {
   border-radius: 7px;
   box-shadow: 0 0 20px 10px #f3f3f3;
@@ -312,7 +317,6 @@ a {
 }
 
 /* Plans */
-
 .plan__name {
   color: #fff;
   margin: 0;
@@ -375,7 +379,6 @@ a {
 }
 
 /* Media */
-
 .media {
   display: flex;
 }
@@ -393,7 +396,6 @@ a {
 }
 
 /* Quotes */
-
 .quote {
   font-size: 3rem;
   font-style: italic;
@@ -443,7 +445,6 @@ a {
 }
 
 /* Grids */
-
 .grid {
   display: grid;
 }
@@ -457,5 +458,35 @@ a {
 @media screen and (min-width: 1024px) {
   .grid--1x3 {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Testimonials */
+.testimonial {
+  padding: 3rem;
+}
+
+.testimonial__image {
+  position: relative;
+}
+
+.testimonial__image > img {
+  width: 100%;
+}
+
+.testimonial__image > .icon-container {
+  position: absolute;
+  top: 3rem;
+  right: -32px;
+}
+
+@media screen and (min-width: 768px) {
+  .testimonial .quote,
+  .testimonial .quote__author {
+    font-size: 2.4rem;
+  }
+
+  .testimonial .quote {
+    margin-left: 6rem;
   }
 }
