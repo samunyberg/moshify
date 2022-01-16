@@ -1,0 +1,23 @@
+{
+  "name": "moshify",
+  "version": "1.0.0",
+  "description": "This repository is created for CodewithMosh's HTML&CSS Website project 'Moshify'.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samnyberg/Moshify.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samnyberg/Moshify/issues"
+  },
+  "homepage": "https://github.com/samnyberg/Moshify#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
