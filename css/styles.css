@@ -1,4 +1,4 @@
-@import './normalize.css';
+@import "./normalize.css";
 
 :root {
   --color-primary: #2584ff;
@@ -541,6 +541,10 @@ a {
   border-radius: 5px;
 }
 
+.callout-signup {
+  transform: translateY(5rem);
+}
+
 .callout--primary {
   background: var(--color-primary);
   color: #fff;
@@ -817,6 +821,7 @@ a {
 /* Footer */
 .footer {
   background: #232323;
+  padding-top: 10rem;
 }
 
 .footer a {
@@ -850,6 +855,10 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+.footer {
+  font-size: 1.5rem;
+}
+
   .footer__sections {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
