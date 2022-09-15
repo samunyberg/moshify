@@ -1,3 +1,5 @@
+@import "./normalize.css";
+
 :root {
   --color-primary: #2584ff;
   --color-secondary: #00d9ff;
@@ -315,7 +317,10 @@ a {
 .card {
   border-radius: 7px;
   box-shadow: 0 0 20px 10px #f3f3f3;
-  overflow: hidden;
+}
+
+.card__header {
+  border-radius: 7px 7px 0 0;
 }
 
 .card__header,
@@ -537,6 +542,10 @@ a {
 .callout {
   padding: 4rem;
   border-radius: 5px;
+}
+
+.callout-signup {
+  transform: translateY(5rem);
 }
 
 .callout--primary {
@@ -815,6 +824,7 @@ a {
 /* Footer */
 .footer {
   background: #232323;
+  padding-top: 10rem;
 }
 
 .footer a {
@@ -848,6 +858,10 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+.footer {
+  font-size: 1.5rem;
+}
+
   .footer__sections {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
